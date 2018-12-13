@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="icon" href="images/favicon8.ico">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="css/shopCar.css">
+    <script src="js/rem.js"></script>
+</head>
+<body>
+    <div class="m-page">
+        <header>
+        <div class="header-wrap">
+            <div class="logo-wrap">
+                <div class="nav-switch">
+                </div>
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
+            </div>
+            <div class="myhome">
+                <a class="search" href="###">
+                    <div class="search-img">
+                        
+                    </div>
+                    <p>搜索</p>
+                </a>
+                <a class="mypage" href="homepage.html">
+                    <div class="mypage-img">
+                        
+                    </div>
+                    <p>我的</p>
+                </a>
+            </div>
+        </div>
+        </header>
+        <div class="nowposition">
+        <div>
+            <a href="index.html">音平商城</a> 
+        </div>
+        <div></div>
+        <div>
+            购物车
+        </div>
+        </div>
+        <div class="cart-list">
+        <div class="cartempty">
+            <div class="emptymsg">
+                <p>您的购物车空空如也</p>
+            </div>
+            <a href="index.html" class="goaround">去逛逛</a>
+        </div>
+        <ul>
+            <script type="text/template" id="prolist">
+             
+                <li>
+                    <input type="checkbox" class="cartcheckpro" onclick="selectGoods($(this))">
+                    <div class="img-box">
+                        <a href=""><img src="./images/201405211637390168579.jpg" a  lt=""></a> 
+                    </div>
+                    <div class="promsg">
+                        <p class="protit">
+                            <a href="###">H60红豆监听级高音质耳塞</a>  
+                        </p>
+                        <p><span class="proprice">￥<%=datas.aa%></span></p>
+                    </div>
+                    <div class="list-opra">
+                        <div class="del" onclick="deleteProduct($(this))"></div>
+                        <div class="procount">
+                            <a href="javascript:void(0)" class="min" onclick="minusProductNum($(this))"></a>
+                            <input type="number" value="1" maxlength="4" class="pro-num">
+                            <a href="javascript:void(0)" class="add" onclick="plusProductNum($(this))"></a>
+                        </div>
+                    </div>
+                </li>
+               
+            </script>
+        </ul>
+        
+        <div class="cart-func">
+            <div class="clearcart">清空购物车</div>
+            <div class="tobuy">
+                <a href="###">继续购物</a>
+            </div>
+        </div>
+        <div class="other-info">
+            <a href="###" class="info_area">
+                <span class="redemption">换购</span>
+                参与【100元K歌效果精调服务】换购活动，去选择
+                <span class="arrow"></span>
+            </a>
+        </div>
+        </div>
+        <div class="save-tip">
+        <div class="tip-tit">省钱小提示</div>
+        <ul class="tip-cont">
+            <li>1.在线支付可使用积分抵现金</li>
+            <li>2.在线支付可获赠等额积分 </li>
+            <li>3.晒单成功可领取微信红包 </li>
+            <li>4.评论可获取积分 </li>
+        </ul>
+        </div>
+        <div class="footer-holder">
+        </div>
+    </div>
+    <div id="ypSearch-box" class="search-div">
+        <div class="yp-header-home-wrapper yp-header2 clearfix">
+            <div class="yp-search-icon2">
+                <a href="javascript:void(0)" class="yp-search-icon-cancel-a yp-search">
+                    <i class="yp-sprite-icon2"></i>
+                </a>
+            </div>
+            <div class="yp-search-form2">
+                <div class="yp-search-form-box2">
+                    <div class="yp-search-form-input-a">
+                        <input type="text" id="searchkwId" class="hilight1" placeholder="搜索商品" value="">
+                        <a href="javascript:void(0)" class="yp-search-form-action2 ">
+                            <span class="yp-sprite-icon"></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="searchbox">
+            <ul class="search-list">
+
+            </ul>
+        </div>
+        <div class="hot-search">
+            <div class="hot-search-head">
+                <p>热门搜索</p>
+            </div>
+            <div class="hot-search-tags">
+                <div class="hot-search-tagst">
+                    <a href="javascript:void(0)">手机麦克风</a>
+                    <a href="javascript:void(0)">K歌声卡</a>
+                    <a href="javascript:void(0)">录影声卡</a>
+                </div>
+                <div class="hot-search-tagsb">
+                    <a href="javascript:void(0)">录影声卡</a>
+                    <a href="javascript:void(0)">手机麦克风</a>
+                    <a href="javascript:void(0)">K歌声卡</a>
+                </div>
+            </div>
+        </div>
+        <div class="search-land">
+            <div class="recent-search-head">
+                <p>历史搜索</p>
+                <i class="garbage-pic clear-searchhis"></i>
+            </div>
+        </div>
+    </div>
+    <div class="cart-foot-bar">
+        <div class="foot-bar-wrap">
+            <div class="checkall">
+                <input type="checkbox" class="checkedall" onclick="selectAll($(this))">
+                <p>全选</p>
+            </div>
+            <div class="countmsg">
+                <p>商品总金额: <span class="total">￥0.00</span></p>
+                <p>优惠金额: <span class="offer">￥0.00</span></p>
+                <p>订单金额: <span class="afteroffer">￥0.00</span><em>（不含运费）</em></p>
+            </div>
+            <div class="tosettle">
+                去结算
+            </div>
+        </div>
+    </div>
+    <div id="menu">
+        <div class="menu-panel">
+            <ul>
+                <li>
+                    <h2>网站导航</h2>
+                    <ul class="m-list">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="###">品牌专区</a></li>
+                        <li><a href="###">套装分类</a></li>
+                        <li><a href="classify.html">商品分类</a></li>
+                        <li><a href="active.html">活动专场</a></li>
+                        <li><a href="homepage.html">我的音平</a></li>
+                        <li><a href="###">帮助中心</a></li>
+                        <li><a href="###">商城中心</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2 class="special">特色服务</h2>
+                    <ul class="m-list">
+                        <li><a href=""><img src="./images/zx_logo-v1.0.0.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./images/lx_logo-v1.0.0.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./images/ysf_logo-v1.0.0.jpg" alt=""></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="m-list m-list-b">
+                        <li><a href=""><img src="./images/ico_02-v1.0.0.jpg" alt=""> <span>订单查询</span></a></li>
+                        <li><a href=""><img src="./images/edit_index-1.0.0.png" alt=""><span>投诉建议</span></a></li>
+                    </ul>
+                </li>
+                <li class="m-list m-list-b m-tel"><img src="./images/ico_03-v1.0.0.jpg" alt="">400-700-3638</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./js/ejs.js"></script>
+<script src="./js/mock.js"></script>
+<script src="./js/zepto.min.js"></script>
+<script src="./js/fastclick.js"></script>
+<script src="./js/fx.js"></script>
+<script src="./js/shopCar.js"></script>
+
+</html>

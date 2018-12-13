@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/base.js"></script>
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="icon" href="images/favicon8.ico">
+</head>
+<body>
+    <div class="wrap">
+        <!-- 头部内容 -->
+        <div class="nav">
+            <div class="nav_left">
+               <a class="logo"href="index.html"></a>
+            </div>
+        </div>
+        <!-- 这上面是面包的内容 -->
+        <div class="bread">
+            <div class="bread_word floatleft">账号注册</div>
+            <div class="bread_arrow"></div>
+            <div class="bread_word floatleft">商城注册</div>
+        </div>
+        <div class="zem1"></div>
+        <!-- 手机注册 -->
+        <div class="content">
+            <!-- 这是手机号 -->
+            <div class="tell">
+                <div class="tell_ipt">
+                    <input type="text"id="phoneNum"class="tell_ipt_con"placeholder="请输入你的手机号码">
+                </div>
+            </div>
+            <!-- 这是密码验证区 -->
+            <div class="con_box">
+                <!-- 这是手机验证码 -->
+                <div class="code">
+                    <div class="code_ipt">
+                        <input type="text" id="authCode" class="authCode" placeholder="请输入手机短信验证码">
+                    </div>
+                    <a href="javascript:void(0)"class="yg-sms"id="sendRegMsgA">60秒后重发</a>
+                </div>
+                <!-- 这是密码 -->
+                <div class="password">
+                    <div class="password_ipt">
+                        <input type="password"id="pwd"class="pwd"placeholder="请输入你的密码">
+                    </div>
+                </div>
+                <!-- 这是协议 -->
+                <div class="consult">
+                    <input type="checkbox" id="CheckBox" class="consult_input" checked="checked">
+                    <label>我已阅读并同意<a href="javascript:void(0)" class="xieyi">《音平网服务协议》</a></label>
+                </div>
+            </div>
+            <!-- 这是滑块 -->
+            <div class="stage">
+                <div class="slider" id="slider">
+                    <div class="label">请向右滑动验证</div>
+                    <div class="track" id="track">
+                        <div class="bg-green"></div>
+                    </div>
+                    <div class="label_y">验证通过</div>
+                    <div class="button" id="btn">
+                        <div class="icon" id="icon"></div>
+                        <div class="spinner" id="spinner"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 这是下一步 -->
+            <div class="next">
+                <div class="next_con">
+                    <a href="javascript:void(0)">下一步</a>
+                </div>
+                <div class="enrol">
+                    <a href="javascript:void(0)">立即注册</a>
+                </div>
+            </div>
+        </div>
+        <div class="login">
+            <a href="login.html">已有账号，去登录</a>
+        </div>
+        <footer class="foot">
+            <div class="foot_top">
+                <div class="foot_con">
+                    <a href="javascript:void(0)">
+                        <img src="images/bottom_logo1-1.0.0.png" alt="">
+                        <span>了解音频</span>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="images/bottom_logo2-1.0.1.png" alt="">
+                        <span>触屏版</span>               
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="images/bottom_logo3-1.0.0.png" alt="">
+                        <span>电脑版</span>                
+                    </a>
+                </div>
+                <div class="foot_bot">
+                    <p>增值电信业务经营许可证：粤B2-20110237 | 粤ICP备11032710号</p>
+                    <p>© 2011-2017 音平商城</p>
+                </div>
+            </div>
+        </footer> 
+        <!-- 错误提示 -->
+        <div class="alertBox alertBoxBlack" id="mobileShowMessageDiv">
+            <p class="msg" id="mobileShowMessageWarning"></p>
+        </div>
+    </div>    
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/register.js"></script>
+</html>

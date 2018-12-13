@@ -1,0 +1,60 @@
+img{
+    display: block;
+}
+.banner img{
+    width:100%;
+    
+}
+.moudle-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #980035;
+    padding-top: 0.15rem;
+}
+.moudle-nav li {
+    margin-bottom: 0.15rem;
+}
+.moudle-nav li img{
+    width:3.6rem;
+}
+/* ==========热卖排行========== */
+.hot{
+    width:100%;
+}
+.show-list li{
+    display:flex;
+    /* justify-content: space-between; */
+}
+.hot-sort{
+    width: 0.85rem;
+    background-color: #f25455;
+    height:0.85rem;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 0.2rem;
+    line-height: 0.24rem;
+}
+.hot-sort-img{
+    width: 0.85rem;
+    height: 0.85rem;
+    vertical-align: middle;
+    margin-right: 0.15rem;
+}
+.hot-sort-des{
+  
+    display: flex;
+    /* justify-content:space-between; */
+}
+.picmoney{
+    width:5.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.hottit{
+    margin:0.1rem 0 0.25rem 0;
+}
+.picmoney i{
+    background:
+}

@@ -1,0 +1,51 @@
+body{font-size:.24rem;color:#333;}
+/* 头部nav的内容 */
+.nav{position: relative;height: .94rem;background: #f8f8f8;line-height: .88rem;border-bottom: .04rem solid #ff7f00;}
+.nav_left .logo{position: absolute;left: .06rem;top: .16rem;width: 2.36rem;height: .64rem;background-size: 12.2rem;
+    background: url(../images/logo.png) no-repeat;background-size: 100% 100%;}
+/* 这是面包的内容 */
+.bread{width: 100%;height: .62rem;line-height: .6rem;background-color: #fff;border-bottom: .02rem solid #ccc;}
+.bread_word{padding:0 .16rem}
+.bread_arrow{width: .22rem;height: .6rem;background: url(../images/title_bg.png) no-repeat;background-size: .22rem .6rem;
+    display: block;float: left;}
+.floatleft{float:left}
+/* 这是中心内容 */
+.zem1{margin-top:.3rem!important;}
+.tell,.pwd{height: .76rem;position: relative;margin: 0 .2rem;border: .02rem solid #dcdcdc;
+    background: #fff;line-height: .76rem;display:flex;}
+.tell_ipt,.pwd_ipt{padding-right:.6rem;padding-left:.3rem;}
+.tell_ipt_con,.pwd_ipt_con{width: 100%;border: 0;font-size: .24rem;line-height: .6rem;}
+.tell_left,.pwd_left{width: 1.42rem;height: 0.76rem;display: flex;padding-left:.30rem;border-right:.02rem solid #dcdcdc;}
+.pwd_left .mima{font-size: 18px;}
+/* 这是下一步 */
+.zhuce{padding:0 .2rem;margin-top:.2rem;}
+.zhuce1{height:.7rem;line-height: .7rem;text-align: center;background: #fd7d26;border-radius:.02rem;padding: 0 .2rem;
+    font-size: .28rem;border-radius: .08rem;display: block;cursor: pointer;}
+.zhuce1 a{color:#FFF;}
+/* 这里是合作单位 */
+.Cooperation{margin:.6rem 0 0 .2rem;}
+.cpi_t{padding-top:.3rem;}
+.cp_con{display:flex;justify-content: center;margin-top:.2rem;}
+.cp_con li{width: 0.9rem;height: 0.9rem;margin-left:.3rem;}
+.cp_con li:nth-child(1){margin-left:0;}
+.cp_con li img{width: 0.8rem;height: 0.8rem;}
+/* 这是快速登陆 */
+.forget{text-align: center;margin-top:.2rem;padding-bottom:.8rem;}
+.forget a{color:#06c;}
+.forget a:nth-child(1){padding-right:.6rem;border-right:.02rem solid #cecece;}
+.forget a:nth-child(2){margin-left:.6rem;}
+/* 这是底部 */
+.foot{padding-top:.3rem;}
+.foot_top{background:#FFF;}
+.foot_con{padding: .4rem 1.3rem;display:flex;}
+.foot_con a{width: 30%;text-align: center;display: block;display:flex;flex-direction: column;margin-left:.2rem}
+.foot_con a:nth-child(1){margin-left:0;}
+.foot_con a img{width:.84rem;height: .84rem;margin:0 auto;vertical-align: middle;}
+.foot_con a span{width: 100%;font-size: .26rem;color: #c5c5c5;}
+.foot_con a:nth-child(2) span{color:#565656;}
+.foot_bot{font-size:.18rem;text-align: center;padding: .1rem 0 .16rem;color: #888;line-height:.28rem;}
+/* 错误提示 */
+.alertBox {top: 30%;left: 7%;width: 82%;background: #fff;padding: 10px;border-radius: 1px;z-index: 101;
+    border-radius: 4px;position: fixed!important;display:none;}
+.alertBoxBlack {background: rgba(0,0,0,.7);color: #fff;}
+.alertBox .msg {text-align: center;padding: 20px 0;}

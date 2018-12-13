@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/rest.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/series-1.css">
+    <link rel="icon" href="images/favicon8.ico">
+    <script src="../js/font-size.js"></script>
+</head>
+
+<body>
+    <div class="selec">
+        <div class="pre">
+            <a href="javascript:history.go(-1)"><i class="iconfont">&#xe64b;</i></a>
+        </div>
+        <div class="ipt">
+            <input type="text" placeholder="  请搜索商品" class="sou">
+        </div>
+        <i class="iconfont selr">&#xeaf8;</i>
+    </div>
+    <!-- 模态框 -->
+    <div class="motai">
+        <div class="selec">
+            <div class="pre">
+                <i class="iconfont">&#xe7f6;</i>
+            </div>
+            <div class="ipt">
+                <input type="text" placeholder="  请搜索商品">
+            </div>
+            <i class="iconfont selr">&#xeaf8;</i>
+        </div>
+        <div class="history-select">
+            <div class="tit">
+                <p>最近搜索</p>
+                <i class="iconfont del">&#xe62b;</i>
+            </div>
+            <ul class="history-select-goods">
+                <li>麦克风</li>
+                <li>吉他</li>
+                <li>录音套装</li>
+                <li>麦克风</li>
+                <li>吉他</li>
+                <li>录音套装</li>
+                <li>录音套装</li>
+                <li>麦克风</li>
+                <li>吉他</li>
+                <li>录音套装</li>
+            </ul>
+            <div class="tit">
+                <p>猜你喜欢</p>
+            </div>
+            <ul class="history-select-goods">
+                <li>麦克风</li>
+                <li>吉他</li>
+                <li>录音套装</li>
+                <li>麦克风</li>
+                <li>吉他</li>
+                <li>录音套装</li>
+            </ul>
+        </div>
+        <ul class="search-list">
+           
+        </ul>
+    </div>
+   
+
+    <!-- 头部搜索栏结束 -->
+    <div class="page">
+        <a href="index.html">音平商城</a>
+        <i class="page-next"></i>
+        <a href="kge.html">套装分类</a>
+        <i class="page-next"></i>
+        <a href="">
+            <p>录音编曲</p>
+        </a>
+    </div>
+    <!-- 页面导航结束 -->
+    <!-- 商品排序开始 -->
+    <div class="goods-sort">
+        <p class="good-active"><span>按销量</span><i class="iconfont">&#xe61f;</i></p>
+        <p class="price-sort">按价格</p>
+    </div>
+    <ul class="goodslist">
+        {{foreach $goodslist as $index=>$row}}
+        <li class="goods-list">
+            <div class="goods">
+                <img src="images/{{$row['img_url']}}" alt="">
+                <a href="">
+                    <div class="goods-des">
+                        <p class="tit">{{$row["tit"]}}</p>
+                        <div class="goods-money">
+                            <i>{{$row["active"]}}</i>
+                            <span class="price">￥{{$row["price"]}}</span>
+                            <span class="oldprice">{{$row["oldprice"]}}</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <i class="iconfont iconmore">&#xe621;</i>
+        </li>
+        {{/foreach}}
+    </ul>
+    <ul class="more">
+    </ul>
+    <div class="tmer">
+        <span class="tm"></span>
+        <span>加载更多</span>
+    </div>
+    <img src="../images/xcx-banner.jpg" alt="" class="banner">
+    <!-- ===================底部开始===================== -->
+    <div class="rights-box">
+        <div class="rights-login">
+            <div class="logmsg">
+                <a>登录</a>
+                <a>|</a>
+                <a>注册</a>
+            </div>
+            <div class="tel clearfix">
+                <p class="fl">客服热线：</p>
+                <span class="fl">400-123-4567</span>
+            </div>
+        </div>
+        <ul class="promise">
+            <li>
+                <i class="zp"></i>
+                <a>正品保障</a>
+            </li>
+            <li>
+                <i class="zp"></i>
+                <a>满99包邮</a>
+            </li>
+            <li>
+                <i class="zp"></i>
+                <a>7天退换</a>
+            </li>
+            <li>
+                <i class="zp"></i>
+                <a>售后保障</a>
+            </li>
+        </ul>
+        <div class="banben">
+            <div>
+                <img src="images/bottom_logo1-1.0.0.png" alt="">
+                <p>了解我们</p>
+            </div>
+            <div>
+                <img src="images/bottom_logo2-1.0.2.png" alt="">
+                <p>了解我们</p>
+            </div>
+            <div>
+                <img src="images/bottom_logo3-1.0.2.png" alt="">
+                <p>了解我们</p>
+            </div>
+            <div>
+                <img src="images/bottom_logo4-1.0.0.png" alt="">
+                <p>了解我们</p>
+            </div>
+        </div>
+        <div class="coprt">
+            <p>增值电信业务经营许可证：粤B2-20110237 | 粤ICP备11032710号</p>
+        </div>
+        <div class="coprt">
+            <p>
+                © 2011-2018 音平商城
+            </p>
+        </div>
+    </div>
+    <img src="./images/back_top.png" alt="" class="gotop">
+</body>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/series.js"></script>
+<script src="../js/desc.js"></script>
+<script src="../js/animate.js"></script>
+
+</html>

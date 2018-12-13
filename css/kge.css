@@ -1,0 +1,310 @@
+﻿body,html{
+    width: 100%;
+    background: #eeeeee;
+   overflow-x: hidden;
+
+}
+.wrap{
+    width: 100%;
+    padding-bottom:52px;
+    z-index:100;
+    position: relative;
+background:#eee;
+}
+.nav-top{
+    height: 45px;
+    display:flex;
+    justify-content: space-between;
+    border-bottom:2px solid #ff7f00;
+    background:#eee; 
+}
+.nav-top .iconfont{
+    display: block;
+    text-align:center;
+    font-size: 28px !important;
+}
+.nav-top img{
+    height: 32px;
+}
+.navtr,.navtl{
+    padding-top:5px;
+}
+.nav-top .list{
+    width: 40px;
+    height: 40px;
+   
+}
+.navtr div,.navtl div{
+    margin-right: 0.2rem;
+    /* text-align: center; */
+}
+.navtr img{
+    width:20px;
+    height: 20px;   
+    display: block; 
+    margin:0 auto;                                                          
+}
+.navtr span{
+    display: block;
+    font-size:14px;
+    
+}
+.kge-nav {
+    line-height: 32px;
+    background: white;
+    padding-left:10px;
+}
+
+.kge-nav a {
+    color: #0066cc;
+    font-size: 0.12rem;
+}
+
+.kge-nav .iconfont {
+    font-size:0.16rem;
+    color: #ccc;
+    padding-right: 0.05rem
+}
+
+.kge-nav span {
+    font-size: 0.12rem;
+}
+
+
+
+.kge-list {
+    background: white;
+    margin-bottom:0.15rem;
+}
+
+.kge-list img{
+    width: 100%;
+}
+.kge-list li {
+    color: #333;
+    font-size: 0.12rem;
+    float:left;
+    padding:5px 10px;
+    background: #f4f4f4;
+    border-radius: 20px;
+    margin: 10px 0 5px 10px;
+    
+}
+.img-wrap{
+    display: block;
+    width: 100%;
+    height: 2.34rem;
+}
+ .lazy{
+    display:block;
+    width:32px;
+    margin:0 auto;
+    padding-top: 1.17rem;
+}
+.kge-list{
+    position: relative;
+}
+/* ================版权信息样式开始======================== */
+.rights-box{
+    background: white;
+}
+.rights-login{
+    width:96%;
+    margin:0 auto;
+    display: flex;
+    line-height: 0.6rem;
+    justify-content: space-between;
+}
+.logmsg a{
+    font-size:0.14rem;
+    color:#333;
+}
+.logmsg{
+    padding-left: 0.1rem;
+}
+.tel p{font-size: 0.12rem;}
+.tel span{
+    font-weight:0;
+    color:#ff7f00;
+    font-size:0.16rem;
+}
+.zp{
+    display:inline-block;
+    width:16px;
+    height:16px;
+    background: url("../images/icon-footer-v1.0.jpg") 0 0;
+}
+.promise{
+    display: flex;
+    /* justify-content: space-around; */
+    border: 1px solid #ccc;
+    
+}
+.promise li{
+    padding:7px 0;
+    flex-grow:1;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.rights-box .promise li a{
+    font-size: 0.12rem;
+    vertical-align: top;
+}
+.banben img{
+    display: block;
+    width: 42px;
+    margin:0 auto;
+}
+.banben{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.banben div{
+    padding: 0 0.2rem;
+}
+.banben p{
+    font-size: 12px;
+    color:#666;
+    margin-top: 5px;
+}
+.coprt{
+   display: flex;
+   justify-content: center;
+}
+.coprt p{
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+}
+/* =================底部定位================== */
+.v-bar-i .txt {
+    font-size: 10px;
+    color: #dbdbdb;
+    display: block;
+    line-height: 15px;
+    margin-bottom: 6px;
+    margin: 0 auto;
+}
+
+.v-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    display: table;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.v-fixed-bottom .v-bar-i {
+    display: block;
+    display: table-cell;
+    text-align: center;
+    padding-top: 10px;
+    width: 20%;
+}
+
+.ico_d {
+    width: 20px;
+    height: 22px;
+    background: url(../images/icon_b-v1.0.0.png) no-repeat;
+    background-size: 100px;
+}
+
+.ico_d {
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+}
+
+.ico_d_01 {
+    background-position: 0 0;
+}
+
+.ico_d_02 {
+    background-position: -20px 0;
+}
+
+.ico_d_03 {
+    background-position: -40px 0;
+}
+
+.ico_d_04 {
+    background-position: -60px 0;
+}
+
+.ico_d_05 {
+    background-position: -80px 0;
+}
+/* =======点击添加和删除的类名======= */
+.gotop{
+    position:fixed;
+    bottom:80px;
+    right:0;
+    width:40px;
+}
+.header-hide-menu{
+    position: fixed;
+    top:0;left:0;
+}
+.menu{
+    position: fixed;
+    left: 0;
+    width: 135px; 
+  
+}
+.mm-panel{ 
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+.mm-panel > .mm-list {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+ .mm-list {
+    padding: 10px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+.mm-list {
+    font-size: 14px;
+}
+ .mm-list > li {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.mm-list > li > a, .mm-list > li > span {
+    overflow: hidden;
+    color: #666;
+    line-height: 20px;
+    display: block;
+    padding: 5px 10px 5px 20px;
+    margin: 0;
+    font-size:13px 
+}
+.img_ico {
+    height: 12px;
+    top: 1px;
+    margin-right: 2px;
+    position: relative;
+}
+.pro-table {
+    padding-top: 15px;
+}
+.pro-table dd {
+    float: left;
+    width: 39%;
+    margin-bottom: 10px;
+    height: 10px;
+    color: #999;
+    line-height: 10px;
+    padding-left: 11%;
+    font-size: 10px;
+    background: url(../images/ico_01-v1.0.0.jpg) no-repeat;
+    background-size: 10px 10px;
+}

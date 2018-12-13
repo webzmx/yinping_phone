@@ -1,0 +1,791 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    font-family: 'microsoft yahei', Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    outline: none;
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+button {
+    background-color: transparent;
+}
+a,body {
+    color: #333;
+}
+body{
+    width: 100%
+}
+/* ---------------header------------------------ */
+html,body{
+    overflow-x: hidden;
+}
+/* ------------------menu-------------------------- */
+.menu{
+    position: fixed;
+    left: 0;
+    width: 135px; 
+}
+.mm-panel{ 
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+.mm-panel > .mm-list {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+ .mm-list {
+    padding: 10px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+.mm-list {
+    font-size: 14px;
+}
+ .mm-list > li {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.mm-list > li > a, .mm-list > li > span {
+    overflow: hidden;
+    color: #666;
+    line-height: 20px;
+    display: block;
+    padding: 5px 10px 5px 20px;
+    margin: 0;
+    font-size:13px 
+}
+.img_ico {
+    height: 12px;
+    top: 1px;
+    margin-right: 2px;
+    position: relative;
+}
+.pro-table {
+    padding-top: 15px;
+}
+.pro-table dd {
+    float: left;
+    width: 39%;
+    margin-bottom: 10px;
+    height: 20px;
+    color: #999;
+    line-height: 10px;
+    padding-left: 11%;
+    font-size: 10px;
+    background: url(../images/ico_01-v1.0.0.jpg) no-repeat;
+    background-size: 10px 10px;
+}
+/* -----------------header-------------- */
+.mm-page {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: left 0.3s;
+    background: #fff;
+}
+.mmbox-y{
+    overflow-y: hidden;
+}
+.mm-blocker{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;  
+    z-index:10000 ;
+    display: none;
+}
+.mm-move{
+    left:135px;
+    transition: left 0.3s;
+    box-shadow:  5px 0px 10px 3px #333; 
+    
+}
+.header{
+    height: 47px;
+    background: #f8f8f8;
+    line-height: 44px;
+    border-bottom: 2px solid #ff7f00;
+}
+.header a.menu_nav {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    position: absolute;
+    left: 3px;
+    background: #f8f8f8;
+}
+.ico_x {
+    width: 45px;
+    height: 45px;
+    display: block;
+    overflow: hidden;
+    background: url(../images/icon_x-v1.0.0.png) no-repeat;
+    background-size: 225px;
+}
+.ico_x_01 {
+    width: 40px;
+    height: 40px;
+    background-position: 0 0;
+}
+.header .header-left {
+    position: absolute;
+    left: 40px;
+    top: 0;
+    height: 45px;
+    width: 118px;
+    background: #f8f8f8;
+}
+.header .header-logo {
+    position: absolute;
+    left: 3px;
+    top: 8px;
+    width: 118px;
+    height: 32px;
+    background: url(../images/logo-v1.0.0.png) no-repeat;
+    background-size: 100% 100%;
+}
+.header .header-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 45px;
+    background: #f8f8f8;
+}
+.ico_x_02, .ico_x_03 {
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+    margin-left: 5px;
+    background-size: 100px;
+}
+.header .header-a {
+    float: left;
+    display: block;
+    margin-right: 8px;
+    width: 30px;
+    height: 45px;
+    background: #f8f8f8;
+    text-align: center;
+}
+.ico_x_02 {
+    background-position: -20px 0;
+}
+.header .header-link-tag {
+    line-height: 1.2;
+    font-size: 9px;
+}
+.ico_x_03 {
+    background-position: -40px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------ypSearch-box------------------- */
+.search-div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+    z-index: 10000;
+    overflow-x: hidden;
+}
+
+.yp-search-icon1 {
+    width: 30px;
+    overflow: hidden;
+    border-radius: 8px;
+    float: left;
+}
+
+.yp-search-icon-cancel-a {
+    line-height: 20px;
+    display: block;
+    padding: 10px 10px 10px 0;
+}
+
+.yp-search-icon-cancel-a i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-position: -20px 0;
+}
+
+.hilight1 {
+    border: 0;
+    display: inline-block;
+    background: 0;
+    font-size: 13px;
+    line-height: 1.2em;
+    height: 1.2em;
+    width: 90%;
+    vertical-align: middle;
+    margin-top: -13px;
+    color: #666;
+}
+
+.yp-sprite-icon {
+    background: url(../images/yp-sprites-v1.0.0.png) no-repeat;
+    background-size: 200px 200px;
+}
+
+.top-search-box {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 0 0 3px;
+}
+
+.yp-search-icon2{
+	width: 30px;
+	overflow: hidden;
+    border-radius:8px; 
+    float: left;
+}
+.yp-header-home-wrapper{
+    line-height: 40px;
+    margin: 0 9px;
+    width: 100%
+}
+.yp-search-form2 {
+    float: left;
+    width: 90%;
+}
+.yp-search-form2 .yp-search-form-input-a {
+    background: #fff;
+    display: block;
+    margin-top: 5px;
+    width: 96%;
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 12px;
+    border: 1px solid #bfbfbf;
+    height: 30px;
+}
+.yp-search-form-input-a{
+    position: relative;
+}
+#searchkwId{
+    text-indent: 0.5em;
+}
+.yp-sprite-icon2 {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-position: -40px 0 !important;
+}
+.yp-search-form-action2{
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+	border-radius: 0 4px 4px 0;
+    border-left:1px solid   #bfbfbf;
+}
+
+.yp-sprite-icon2{
+	background: url(../images/yp-sprites-v1.0.0.png) no-repeat;
+    background-size: 200px 200px;
+}
+.yp-search-form-action2 span {
+    display: block;
+    width: 15px;
+    height: 14px;
+    background-position: -83px 0;
+    margin: 7px 0 0 7px;
+}
+#ypSearch-box{
+    display: none;
+}
+.hot-search {
+    padding-left: 15px;
+    border-top: solid #D1D1D1 1px;
+    background: #fff;
+}
+.hot-search-tagst,.hot-search-tagsb{
+    display: flex;
+    justify-content:space-between;
+    
+}
+.hot-search-head {
+    padding: 10px 15px 10px 0;
+}
+.hot-search-tagst a,.hot-search-tagsb a{
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 1.5625rem;
+    display: block;
+    width: 100%;
+    color: #666;
+    font-size: 12px;
+    border: 1px solid #eee;
+    background-color: #eee;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 15px 7px 0;
+}
+.search-land{
+    margin-top:10px;
+
+}
+.recent-search-head {
+    padding: 10px 15px;
+    overflow: hidden;
+    background: #fff;
+}
+.recent-search-head p {
+    font-size: 14px;
+    color: #999;
+    float: left;
+    width: 6.25rem;
+    padding-left: 1px;
+}
+.recent-search-head .garbage-pic {
+    float: right;
+    display: block;
+    background: url(../images/search-sprites-v1.0.0.png) -35px 0 no-repeat;
+    height: 15px;
+    width: 15px;
+    background-size: 50px 50px;
+}
+
+.searchbox{
+    position:absolute;
+    top:44px; 
+    width: 100%
+}
+.search-list{
+    background: #fff;
+    width: 100%;
+    padding-left:12px; 
+}
+.auto-li a{
+    height: 42px;
+    display: block;
+    padding-right: 12px;
+    color: #333;
+    line-height: 42px;
+    border-bottom:1px solid #ccc; 
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ----------------------c_bread------------------------- */
+.c_bread {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.c_bread .bread_word {
+    padding: 0 8px;
+}
+
+.floatleft {
+    float: left;
+}
+
+.c_bread a {
+    color: #06c;
+}
+
+.ico_x_05 {
+    width: 13px;
+    height: 30px;
+    background-position: -130px 0;
+    background-size: 151px;
+    float: left;
+}
+.ico_x_05 {
+    width: 13px;
+    height: 30px;
+    background-position: -130px 0;
+    background-size: 151px;
+    float: left;
+}
+
+.breadlimit {
+    width: 27%;
+    height: 30px;
+    display: block;
+    float: left;
+}
+
+.bread_word h1 {
+    font-size: 12px;
+}
+
+.breadlimit h1 {
+    font-weight: 600;
+}
+
+/* ----------------pro-table----------------------- */
+.pro-table {
+    padding-top: 15px;
+}
+
+.pro-table li {
+    float: left;
+    width: 50%;
+}
+
+.pro-table li .protable-width {
+    display: block;
+    margin: 0 5px 10px 14px;
+}
+
+.proclass-icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    margin-right: 5px;
+    background: url(../images/icon-list-min-v1.0.0.png) no-repeat;
+    background-size: 1500px;
+}
+
+.pi-erji {
+    background-position: -300px 0;
+}
+
+.pi-mkf {
+    background-position: -990px 0;
+}
+
+.pi-shengka {
+    background-position: -1170px 0;
+}
+
+.pi-services {
+    background-position: -1380px 0;
+}
+.pi-midi{
+    background-position: -600px 0;
+
+}
+.pi-mixer{
+    background-position: -1290px 0;
+
+}
+.pi-huafang{
+    background-position: -540px 0;
+
+}
+.pi-erfang{
+    background-position: -270px 0;
+}
+.pi-bofangqi{
+    background-position: -60px 0;
+}
+.pi-luyinji{
+    background-position: -900px 0;
+}
+.pi-diangeji{
+    background-position: -180px 0;
+}
+.pi-gongfang{
+    background-position: -480px 0;
+
+}
+.pi-chumoping{
+    background-position: -120px 0;
+
+}
+.pi-yinxiang{
+    background-position: -1410px 0;
+
+}
+
+.pro-table .proclass-des {
+    margin-left: 30px;
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 10px;
+}
+
+.pro-table .proclass-des .proclass-title {
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    width: 100%;
+}
+
+.pro-table .proclass-des .proclass-subtitle {
+    font-size: 10px;
+    color: #acacac;
+    line-height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* -------------ypSearch-holder-------------------------- */
+.ypSearch-holder {
+    margin: 8px;
+    border: 1px solid #f60;
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+}
+
+.ypSearch-input {
+    padding: 4px 0 4px 10px;
+    overflow: hidden;
+    background: #fff;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.ypSearch-input input {
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 24px;
+    outline: 0;
+    font-size: 14px;
+    color: #999;
+    padding-left: 18px;
+}
+
+.ypSearch-holder-search {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 20px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+}
+
+/* -------------v-fixed-bottom---------------- */
+.v-bar-i .txt {
+    font-size: 10px;
+    color: #dbdbdb;
+    display: block;
+    line-height: 15px;
+    margin-bottom: 6px;
+    margin: 0 auto ;
+    
+}
+
+.v-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    display: table;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.v-fixed-bottom .v-bar-i {
+    display: block;
+    display: table-cell;
+    text-align: center;
+    padding-top: 10px;
+    width: 20%;
+}
+
+.ico_d {
+    width: 20px;
+    height: 22px;
+    background: url(../images/icon_b-v1.0.0.png) no-repeat;
+    background-size: 100px;
+}
+
+.ico_d {
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+}
+
+.ico_d_01 {
+    background-position: 0 0;
+}
+
+.ico_d_02 {
+    background-position: -20px 0;
+}
+
+.ico_d_03 {
+    background-position: -40px 0;
+}
+
+.ico_d_04 {
+    background-position: -60px 0;
+}
+
+.ico_d_05 {
+    background-position: -80px 0;
+}
+/* +----------------mb_frame--------------------- */
+.xcx-banner{
+    margin-top: 10px;
+    width: 100%;
+}
+.xcx-banner img{
+    width: 100%;
+}
+.plc_footer {
+    background: #fff;
+}
+.mb_frame .footer-title {
+    border-bottom: 1px solid #ebeced;
+    overflow: hidden;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.mb_frame .footer-login {
+    float: left;
+    margin-left: 27px;
+    padding: 10px 0;
+    padding-bottom: 0;
+}
+.mb_frame .footer-login a {
+    font-size: 14px;
+}
+.mb_frame .footer-login span {
+    display: inline-block;
+    margin: 0 5px;
+    color: #ccc;
+}
+.mb_frame .sec_phone {
+    float: right;
+    margin-right: 20px;
+    border: none;
+}
+.plc_footer .sec_phone {
+    text-align: center;
+    border-bottom: 1px #ebeced solid;
+    padding: 8px 0;
+    font-size: 12px;
+}
+.plc_footer .ftr_list.versions {
+    padding: 10px;
+    border-bottom: 1px #ebeced solid;
+}
+.breadlimit, .filter ul, .plc_footer .ftr_list, .uof {
+    overflow: hidden;
+}
+.versions a{
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center
+}
+.boderrightddd{
+    border-left:1px solid #ebeced; 
+}
+.footer-icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../images/icon-footer-v1.0.0.png) no-repeat;
+    background-size: 56px;
+    vertical-align: -2px;
+}
+.footer-zheng {
+    background-position: -42px 0;
+}
+.footer-mail {
+    background-position: -14px 0;
+}
+.footer-7day {
+    background-position: 0 0;
+}
+.footer-after {
+    background-position: -28px 0;
+}
+.mb_frame .ftr_list.login {
+    padding: 20px 35px !important;
+}
+.mb_frame .login a {
+    width: 25%;
+    text-align: center;
+    display: block;
+    float: left;
+}
+.mb_frame .login a img {
+    width: 42px;
+    height: 42px;
+    margin-left: 3px;
+}
+.mb_frame .login span {
+    display: block;
+}
+.mbft_bom {
+    font-size: 9px;
+    text-align: center;
+    padding: 5px 0 8px;
+    color: #888;
+    line-height: 14px;
+}
+.v-mbft .footer-holder{
+    background-color: #fff;
+}
+.footer-holder {
+    height: 50px;
+}
+/* -------------.v-go-up----------------------- */
+.v-go-up {
+    position: fixed;
+    right: 8px;
+    bottom: 58px;
+    z-index: 10;
+    text-align: center;
+    display: none;
+}
+
+.ico_x2 {
+    width: 45px;
+    height: 45px;
+    display: block;
+    overflow: hidden;
+    background: url(../images/icon_x-v1.0.0.png) no-repeat;
+    background-size: 225px;
+}
+
+.ico_x_04 {
+    width: 35px;
+    height: 35px;
+    background-position: -112px 0;
+    background-size: 185px;
+}
